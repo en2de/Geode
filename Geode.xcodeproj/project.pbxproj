@@ -10,6 +10,7 @@
 		BA9B7F4F1D9E1A9F003F0722 /* Geode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA9B7F451D9E1A9F003F0722 /* Geode.framework */; };
 		BA9B7F541D9E1A9F003F0722 /* GeodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9B7F531D9E1A9F003F0722 /* GeodeTests.swift */; };
 		BA9B7F561D9E1A9F003F0722 /* Geode.h in Headers */ = {isa = PBXBuildFile; fileRef = BA9B7F481D9E1A9F003F0722 /* Geode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA9B7F611D9E440B003F0722 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9B7F601D9E440B003F0722 /* Array+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		BA9B7F4E1D9E1A9F003F0722 /* GeodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA9B7F531D9E1A9F003F0722 /* GeodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeodeTests.swift; sourceTree = "<group>"; };
 		BA9B7F551D9E1A9F003F0722 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA9B7F601D9E440B003F0722 /* Array+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		BA9B7F471D9E1A9F003F0722 /* Geode */ = {
 			isa = PBXGroup;
 			children = (
+				BA9B7F5F1D9E43FD003F0722 /* Extensions */,
 				BA9B7F481D9E1A9F003F0722 /* Geode.h */,
 				BA9B7F491D9E1A9F003F0722 /* Info.plist */,
 			);
@@ -84,6 +87,14 @@
 				BA9B7F551D9E1A9F003F0722 /* Info.plist */,
 			);
 			path = GeodeTests;
+			sourceTree = "<group>";
+		};
+		BA9B7F5F1D9E43FD003F0722 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BA9B7F601D9E440B003F0722 /* Array+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +159,7 @@
 				TargetAttributes = {
 					BA9B7F441D9E1A9F003F0722 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					BA9B7F4D1D9E1A9F003F0722 = {
@@ -196,6 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA9B7F611D9E440B003F0722 /* Array+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +333,7 @@
 		BA9B7F5A1D9E1A9F003F0722 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -331,6 +345,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.en2de.Geode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -338,6 +353,7 @@
 		BA9B7F5B1D9E1A9F003F0722 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -356,6 +372,7 @@
 		BA9B7F5D1D9E1A9F003F0722 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = GeodeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.en2de.GeodeTests;
@@ -367,6 +384,7 @@
 		BA9B7F5E1D9E1A9F003F0722 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = GeodeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.en2de.GeodeTests;
@@ -394,6 +412,7 @@
 				BA9B7F5B1D9E1A9F003F0722 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BA9B7F5C1D9E1A9F003F0722 /* Build configuration list for PBXNativeTarget "GeodeTests" */ = {
 			isa = XCConfigurationList;
@@ -402,6 +421,7 @@
 				BA9B7F5E1D9E1A9F003F0722 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
