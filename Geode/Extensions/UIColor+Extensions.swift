@@ -10,15 +10,10 @@ import Foundation
 
 extension UIColor {
     public class func from(hexString: String, alpha: CGFloat = 1.0) -> UIColor {
-        var cString:String = hexString.trimmingCharacters(in: NSCharacterSet.whitespacesAndNewlines).uppercased()
-        if (cString.hasPrefix("#")) {
-            cString = cString.substring(from: cString.index(after: cString.startIndex))
-        }
+        var cString = hexString.trimmingCharacters(in: NSCharacterSet.whitespacesAndNewlines).uppercased()
         
-        if cString.hasPrefix("0X") {
-            let range = NSMakeRange(2, cString.characters.count - 2)
-            cString=(cString as NSString).substring(with: range)
-        }
+        cString.dropPrefix("#")
+        cString.dropPrefix("0X")
         
         let rString = (cString as NSString).substring(to:2)
         let gString = ((cString as NSString).substring(with: NSMakeRange(2, 2)))
