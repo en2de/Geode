@@ -12,6 +12,8 @@
 		BA9B7F561D9E1A9F003F0722 /* Geode.h in Headers */ = {isa = PBXBuildFile; fileRef = BA9B7F481D9E1A9F003F0722 /* Geode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA9B7F611D9E440B003F0722 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9B7F601D9E440B003F0722 /* Array+Extensions.swift */; };
 		BA9B7F631D9E4451003F0722 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9B7F621D9E4451003F0722 /* UIView+Extensions.swift */; };
+		BA9B7F661D9E478F003F0722 /* Arbitrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9B7F651D9E478F003F0722 /* Arbitrary.swift */; };
+		BA9B7F681D9E47EF003F0722 /* AsycnTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9B7F671D9E47EF003F0722 /* AsycnTesting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +35,8 @@
 		BA9B7F551D9E1A9F003F0722 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA9B7F601D9E440B003F0722 /* Array+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
 		BA9B7F621D9E4451003F0722 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		BA9B7F651D9E478F003F0722 /* Arbitrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arbitrary.swift; sourceTree = "<group>"; };
+		BA9B7F671D9E47EF003F0722 /* AsycnTesting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsycnTesting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,7 @@
 		BA9B7F471D9E1A9F003F0722 /* Geode */ = {
 			isa = PBXGroup;
 			children = (
+				BA9B7F641D9E4783003F0722 /* Protocols */,
 				BA9B7F5F1D9E43FD003F0722 /* Extensions */,
 				BA9B7F481D9E1A9F003F0722 /* Geode.h */,
 				BA9B7F491D9E1A9F003F0722 /* Info.plist */,
@@ -98,6 +103,15 @@
 				BA9B7F621D9E4451003F0722 /* UIView+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BA9B7F641D9E4783003F0722 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BA9B7F651D9E478F003F0722 /* Arbitrary.swift */,
+				BA9B7F671D9E47EF003F0722 /* AsycnTesting.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +226,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA9B7F631D9E4451003F0722 /* UIView+Extensions.swift in Sources */,
+				BA9B7F681D9E47EF003F0722 /* AsycnTesting.swift in Sources */,
+				BA9B7F661D9E478F003F0722 /* Arbitrary.swift in Sources */,
 				BA9B7F611D9E440B003F0722 /* Array+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
