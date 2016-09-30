@@ -26,14 +26,7 @@ DerivedData
 
 # Carthage
 
-*.bcsymbolmap
-
-Carthage/Checkouts
-Carthage/Build/Mac
-Carthage/Build/tvOS
-Carthage/Build/watchOS
-
-!Carthage/Build/
+Carthage/Build
 
 # CocoaPods
 #

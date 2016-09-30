@@ -15,6 +15,9 @@
 		BA9B7F661D9E478F003F0722 /* Arbitrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9B7F651D9E478F003F0722 /* Arbitrary.swift */; };
 		BA9B7F681D9E47EF003F0722 /* AsycnTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9B7F671D9E47EF003F0722 /* AsycnTesting.swift */; };
 		BA9B7F6A1D9E4C5A003F0722 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9B7F691D9E4C5A003F0722 /* UIColor+Extensions.swift */; };
+		BA9B7F781D9E591A003F0722 /* Data+Digest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9B7F751D9E591A003F0722 /* Data+Digest.swift */; };
+		BA9B7F791D9E591A003F0722 /* Digest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9B7F761D9E591A003F0722 /* Digest.swift */; };
+		BA9B7F7A1D9E591A003F0722 /* String+Digest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9B7F771D9E591A003F0722 /* String+Digest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +42,9 @@
 		BA9B7F651D9E478F003F0722 /* Arbitrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arbitrary.swift; sourceTree = "<group>"; };
 		BA9B7F671D9E47EF003F0722 /* AsycnTesting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsycnTesting.swift; sourceTree = "<group>"; };
 		BA9B7F691D9E4C5A003F0722 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		BA9B7F751D9E591A003F0722 /* Data+Digest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Digest.swift"; sourceTree = "<group>"; };
+		BA9B7F761D9E591A003F0722 /* Digest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Digest.swift; sourceTree = "<group>"; };
+		BA9B7F771D9E591A003F0722 /* String+Digest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Digest.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,7 @@
 		BA9B7F471D9E1A9F003F0722 /* Geode */ = {
 			isa = PBXGroup;
 			children = (
+				BA9B7F741D9E591A003F0722 /* Crypto */,
 				BA9B7F641D9E4783003F0722 /* Protocols */,
 				BA9B7F5F1D9E43FD003F0722 /* Extensions */,
 				BA9B7F481D9E1A9F003F0722 /* Geode.h */,
@@ -115,6 +122,16 @@
 				BA9B7F671D9E47EF003F0722 /* AsycnTesting.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		BA9B7F741D9E591A003F0722 /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				BA9B7F751D9E591A003F0722 /* Data+Digest.swift */,
+				BA9B7F761D9E591A003F0722 /* Digest.swift */,
+				BA9B7F771D9E591A003F0722 /* String+Digest.swift */,
+			);
+			path = Crypto;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,9 +245,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA9B7F7A1D9E591A003F0722 /* String+Digest.swift in Sources */,
 				BA9B7F631D9E4451003F0722 /* UIView+Extensions.swift in Sources */,
 				BA9B7F6A1D9E4C5A003F0722 /* UIColor+Extensions.swift in Sources */,
 				BA9B7F681D9E47EF003F0722 /* AsycnTesting.swift in Sources */,
+				BA9B7F781D9E591A003F0722 /* Data+Digest.swift in Sources */,
+				BA9B7F791D9E591A003F0722 /* Digest.swift in Sources */,
 				BA9B7F661D9E478F003F0722 /* Arbitrary.swift in Sources */,
 				BA9B7F611D9E440B003F0722 /* Array+Extensions.swift in Sources */,
 			);
@@ -363,6 +383,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Geode/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -383,6 +407,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Geode/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
