@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol AsycnTesting {
+public protocol AsycnTesting {
     func asyncTest(timeout: TimeInterval, testCase: (@escaping () -> Void) -> Void , onTimeout: (() -> Void)?)
 }
 
