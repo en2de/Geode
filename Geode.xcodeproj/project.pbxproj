@@ -14,6 +14,7 @@
 		BA9B7F631D9E4451003F0722 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9B7F621D9E4451003F0722 /* UIView+Extensions.swift */; };
 		BA9B7F661D9E478F003F0722 /* Arbitrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9B7F651D9E478F003F0722 /* Arbitrary.swift */; };
 		BA9B7F681D9E47EF003F0722 /* AsycnTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9B7F671D9E47EF003F0722 /* AsycnTesting.swift */; };
+		BA9B7F6A1D9E4C5A003F0722 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9B7F691D9E4C5A003F0722 /* UIColor+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		BA9B7F621D9E4451003F0722 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		BA9B7F651D9E478F003F0722 /* Arbitrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arbitrary.swift; sourceTree = "<group>"; };
 		BA9B7F671D9E47EF003F0722 /* AsycnTesting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsycnTesting.swift; sourceTree = "<group>"; };
+		BA9B7F691D9E4C5A003F0722 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				BA9B7F601D9E440B003F0722 /* Array+Extensions.swift */,
 				BA9B7F621D9E4451003F0722 /* UIView+Extensions.swift */,
+				BA9B7F691D9E4C5A003F0722 /* UIColor+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA9B7F631D9E4451003F0722 /* UIView+Extensions.swift in Sources */,
+				BA9B7F6A1D9E4C5A003F0722 /* UIColor+Extensions.swift in Sources */,
 				BA9B7F681D9E47EF003F0722 /* AsycnTesting.swift in Sources */,
 				BA9B7F661D9E478F003F0722 /* Arbitrary.swift in Sources */,
 				BA9B7F611D9E440B003F0722 /* Array+Extensions.swift in Sources */,
