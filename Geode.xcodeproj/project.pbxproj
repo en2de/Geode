@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BA90AD4C1DA0A8E000EFEE08 /* UILable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA90AD4B1DA0A8E000EFEE08 /* UILable+Extensions.swift */; };
+		BA90AD4E1DA0ACBB00EFEE08 /* Then.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA90AD4D1DA0ACBB00EFEE08 /* Then.swift */; };
 		BA9B7F4F1D9E1A9F003F0722 /* Geode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA9B7F451D9E1A9F003F0722 /* Geode.framework */; };
 		BA9B7F541D9E1A9F003F0722 /* GeodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9B7F531D9E1A9F003F0722 /* GeodeTests.swift */; };
 		BA9B7F561D9E1A9F003F0722 /* Geode.h in Headers */ = {isa = PBXBuildFile; fileRef = BA9B7F481D9E1A9F003F0722 /* Geode.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -34,6 +35,7 @@
 
 /* Begin PBXFileReference section */
 		BA90AD4B1DA0A8E000EFEE08 /* UILable+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILable+Extensions.swift"; sourceTree = "<group>"; };
+		BA90AD4D1DA0ACBB00EFEE08 /* Then.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Then.swift; sourceTree = "<group>"; };
 		BA9B7F451D9E1A9F003F0722 /* Geode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Geode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA9B7F481D9E1A9F003F0722 /* Geode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Geode.h; sourceTree = "<group>"; };
 		BA9B7F491D9E1A9F003F0722 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 			children = (
 				BA9B7F651D9E478F003F0722 /* Arbitrary.swift */,
 				BA9B7F671D9E47EF003F0722 /* AsycnTesting.swift */,
+				BA90AD4D1DA0ACBB00EFEE08 /* Then.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				BA9B7F791D9E591A003F0722 /* Digest.swift in Sources */,
 				BA9B7F661D9E478F003F0722 /* Arbitrary.swift in Sources */,
 				BA9B7F611D9E440B003F0722 /* Array+Extensions.swift in Sources */,
+				BA90AD4E1DA0ACBB00EFEE08 /* Then.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
