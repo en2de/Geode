@@ -8,7 +8,7 @@
 
 import Foundation
 
-public protocol Then {
+public protocol Then: class {
 }
 
 extension Then {
