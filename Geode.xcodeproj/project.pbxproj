@@ -21,6 +21,7 @@
 		BA9B7F791D9E591A003F0722 /* Digest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9B7F761D9E591A003F0722 /* Digest.swift */; };
 		BA9B7F7A1D9E591A003F0722 /* String+Digest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9B7F771D9E591A003F0722 /* String+Digest.swift */; };
 		BA9B7F7E1D9E6114003F0722 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9B7F7D1D9E6114003F0722 /* String+Extensions.swift */; };
+		BAEAE04E1DA284A800FBF978 /* UIViewController+ViewPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEAE04D1DA284A800FBF978 /* UIViewController+ViewPopUp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		BA9B7F761D9E591A003F0722 /* Digest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Digest.swift; sourceTree = "<group>"; };
 		BA9B7F771D9E591A003F0722 /* String+Digest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Digest.swift"; sourceTree = "<group>"; };
 		BA9B7F7D1D9E6114003F0722 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		BAEAE04D1DA284A800FBF978 /* UIViewController+ViewPopUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+ViewPopUp.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 		BA9B7F471D9E1A9F003F0722 /* Geode */ = {
 			isa = PBXGroup;
 			children = (
+				BAEAE04C1DA2849000FBF978 /* ViewPopUp */,
 				BA9B7F741D9E591A003F0722 /* Crypto */,
 				BA9B7F641D9E4783003F0722 /* Protocols */,
 				BA9B7F5F1D9E43FD003F0722 /* Extensions */,
@@ -141,6 +144,14 @@
 				BA9B7F771D9E591A003F0722 /* String+Digest.swift */,
 			);
 			path = Crypto;
+			sourceTree = "<group>";
+		};
+		BAEAE04C1DA2849000FBF978 /* ViewPopUp */ = {
+			isa = PBXGroup;
+			children = (
+				BAEAE04D1DA284A800FBF978 /* UIViewController+ViewPopUp.swift */,
+			);
+			path = ViewPopUp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +269,7 @@
 				BA9B7F7A1D9E591A003F0722 /* String+Digest.swift in Sources */,
 				BA9B7F631D9E4451003F0722 /* UIView+Extensions.swift in Sources */,
 				BA9B7F6A1D9E4C5A003F0722 /* UIColor+Extensions.swift in Sources */,
+				BAEAE04E1DA284A800FBF978 /* UIViewController+ViewPopUp.swift in Sources */,
 				BA9B7F681D9E47EF003F0722 /* AsycnTesting.swift in Sources */,
 				BA9B7F7E1D9E6114003F0722 /* String+Extensions.swift in Sources */,
 				BA9B7F781D9E591A003F0722 /* Data+Digest.swift in Sources */,
